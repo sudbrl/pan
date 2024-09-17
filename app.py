@@ -14,7 +14,7 @@ def fetch_info_from_api(pan):
 
 # Streamlit App
 def main():
-    st.title("PAN Search App")
+    st.markdown("<h1 style='text-align: center;'>PAN Search App</h1>", unsafe_allow_html=True)
     st.write("Enter the PAN number to retrieve the information.")
     
     # Input for PAN number
