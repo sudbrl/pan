@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Search Result</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .result-container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #007BFF;
+            color: white;
+        }
+        table td {
+            background-color: #f9f9f9;
+        }
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Business Details</h1>
+        <table>
+            <tr>
+                <th>PAN Number</th>
+                <td>{{ pan }}</td>
+            </tr>
+            <tr>
+                <th>Business Name</th>
+                <td>{{ name }}</td>
+            </tr>
+            <tr>
+                <th>VAT Registration Date</th>
+                <td>{{ vatRegDate }}</td>
+            </tr>
+            <tr>
+                <th>Tax Clearance Date</th>
+                <td>{{ taxclearance }}</td>
+            </tr>
+            <tr>
+                <th>Return Verified Date</th>
+                <td>{{ returnVerifiedDate }}</td>
+            </tr>
+            <tr>
+                <th>Tax Returns Status</th>
+                <td>{{ taxreturns }}</td>
+            </tr>
+            <tr>
+                <th>VAT Returns Status</th>
+                <td>{{ vatreturns }}</td>
+            </tr>
+        </table>
+        <br>
+        <a href="/">Go back to search</a>
+    </div>
+</body>
+</html>

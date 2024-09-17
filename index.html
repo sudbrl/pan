@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Search</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .search-container {
+            text-align: center;
+        }
+        .search-container h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 25px;
+            border: 2px solid #ccc;
+            outline: none;
+        }
+        .search-box:focus {
+            border-color: #007BFF;
+        }
+        .search-button {
+            padding: 15px 25px;
+            font-size: 20px;
+            margin-top: 20px;
+            border-radius: 25px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <h1>PAN Search</h1>
+        <form action="/search" method="POST">
+            <input type="text" id="pan" name="pan" class="search-box" placeholder="Enter PAN" required>
+            <br>
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+</body>
+</html>
